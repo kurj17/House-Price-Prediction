@@ -1,5 +1,5 @@
 # House-Price-Prediction
-Python Jackfruit Problem using basics of data analysis and machine learning
+Python Project using basics of data analysis and machine learning
 
 ## Problem Statement:
 This project aims to develop a machine learning model that predicts house prices using key 
