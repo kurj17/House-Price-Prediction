@@ -8,4 +8,4 @@ and house style. The dataset is cleaned by filling missing numerical values with
 categorical values with "None", followed by preprocessing through one-hot encoding and 
 training a Linear Regression model for price estimation. The trained model is then deployed 
 through a simple wxPython GUI that allows users to input house details and receive accurate, 
-real-time price predictions.
+real-time price predictions. A Streamlit based GUI is also available for for user interactivity and cleaner presentation.
