@@ -12,7 +12,7 @@ from sklearn.metrics import r2_score, mean_squared_error
 import numpy as np
 
 # Load data
-df = pd.read_csv(r"C:\Users\Kuria\Desktop\House_Price_Prediction(Jackfruit_Problem)\train.csv")
+df = pd.read_csv(r"train.csv")
 
 # simple cleaning = fill empty categorical with "None" and numeric with 0
 for col in df.columns:
@@ -57,7 +57,7 @@ print("R² Score:", r2_score(y_test, y_pred))
 
 #saving our model for later use
 import joblib
-joblib.dump(model, r"C:\Users\Kuria\Desktop\House_Price_Prediction(Jackfruit_Problem)\price_prediction.pkl")
+joblib.dump(model, r"price_prediction.pkl")
 print("\nModel saved as price_prediction.pkl")
 
 
@@ -94,3 +94,4 @@ template.loc[0, 'HouseStyle'] = HouseStyle
 prediction = model.predict(template)[0]
 
 print("\nPredicted House Price:", prediction)      '''
+
