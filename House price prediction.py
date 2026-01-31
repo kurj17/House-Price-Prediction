@@ -1,7 +1,5 @@
 
-#================================================================================
-#----------PREPROCESSING, MODEL LOADING, TRAINING & TESTING----------------------
-#================================================================================
+#PREPROCESSING, MODEL LOADING, TRAINING & TESTING
 
 #importing necessary libraries
 import pandas as pd
@@ -63,9 +61,7 @@ joblib.dump(model, r"C:\Users\Kuria\Desktop\House_Price_Prediction(Jackfruit_Pro
 print("\nModel saved as price_prediction.pkl")
 
 
-#===============================================================================
-#---------------IF INPUT IS TO BE TAKEN THROUGH PYTHON TERMINAL-----------------
-#===============================================================================
+#IF INPUT IS TO BE TAKEN THROUGH PYTHON TERMINAL
 '''   #defining a template row for storing input
 template = X.head(1).copy()  # empty template row
 template.loc[0] = X.mean(numeric_only=True)  # fill numeric with mean
@@ -96,4 +92,5 @@ template.loc[0, 'HouseStyle'] = HouseStyle
 
 #final prediction for user
 prediction = model.predict(template)[0]
+
 print("\nPredicted House Price:", prediction)      '''
