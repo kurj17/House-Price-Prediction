@@ -3,8 +3,8 @@ import joblib
 import pandas as pd
 
 #loading stuff
-MODEL_PATH = r"C:\Users\Kuria\Desktop\House_Price_Prediction(Jackfruit_Problem)\price_prediction.pkl"  
-TRAIN_CSV_PATH = r"C:\Users\Kuria\Desktop\House_Price_Prediction(Jackfruit_Problem)\train.csv"         
+MODEL_PATH = r"price_prediction.pkl"  
+TRAIN_CSV_PATH = r"train.csv"         
 
 model = joblib.load(MODEL_PATH)
 csv = pd.read_csv(TRAIN_CSV_PATH)
@@ -97,3 +97,4 @@ btn.Bind(wx.EVT_BUTTON, on_predict)
 
 frame.Show()
 app.MainLoop()
+
